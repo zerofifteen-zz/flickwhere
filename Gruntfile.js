@@ -85,10 +85,6 @@ module.exports = function(grunt) {
             }
         },
 
-        mocha_phantomjs: {
-            all: ['test/**/*.html']
-        },
-
         watch: {
             gruntfile: {
                 files: 'Gruntfile.js',
@@ -142,16 +138,13 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-jst');
     grunt.loadNpmTasks('grunt-contrib-jshint');
 
-    grunt.loadNpmTasks('grunt-mocha-phantomjs');
-
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-connect');
 
     grunt.registerTask('default', [
         'jshint',
         'build-css',
-        'build-js',
-        'mocha_phantomjs'
+        'build-js'
     ]);
 
     grunt.registerTask('build-css', [
@@ -176,12 +169,5 @@ module.exports = function(grunt) {
         'connect',
         'build-css',
         'watch'
-    ]);
-
-    grunt.registerTask('test', [
-        'jshint:gruntfile',
-        'build-css',
-        'build-jst',
-        'mocha_phantomjs',
     ]);
 };
