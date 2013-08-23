@@ -38,7 +38,9 @@
     };
 
     Results.prototype._handleMapReset = function () {
-        this.$el.addClass(this.states.loading);
+        this.$el
+            .addClass(this.states.loading)
+            .empty();
     };
 
     Results.prototype._attachMapNoResults = function () {
