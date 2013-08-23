@@ -1,0 +1,28 @@
+.flk-results {
+  float: right;
+  height: 100%;
+  width: 30%;
+}
+.flk-results.is-loading {
+  background-image: url("../../images/icon-loading.gif");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.flk-photo {
+  position: relative;
+  padding: 0 10px 10px;
+}
+.flk-photo:first-child {
+  padding-top: 10px;
+}
+.flk-photo img {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  border: 6px solid white;
+  -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}

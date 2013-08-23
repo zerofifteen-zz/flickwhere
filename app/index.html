@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>FlickWhere</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0" />
+
+        <link href="/app/static/dist/css/core.min.css" media="screen" rel="stylesheet" />
+    </head>
+
+    <body class="lang-en">
+
+         <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+
+        <script src="/app/static/components/jquery/jquery.js"></script>
+        <script src="/app/static/components/lodash/dist/lodash.underscore.js"></script>
+        <script src="/app/static/components/backbone/backbone.js"></script>
+
+        <script src="/app/static/dist/templates/templates.js"></script>
+
+        <script src="/app/static/js/flickwhere.settings.js"></script>
+        <script src="/app/static/js/flickwhere.utilities.js"></script>
+        <script src="/app/static/js/flickwhere.controller.js"></script>
+        <script src="/app/static/js/modules/map/views.frame.js"></script>
+
+        <script src="/app/static/js/modules/flickr/model.js"></script>
+        <script src="/app/static/js/modules/flickr/collection.js"></script>
+        <script src="/app/static/js/modules/flickr/views.results.js"></script>
+        <script src="/app/static/js/modules/flickr/views.photo.js"></script>
+
+
+        <script>
+            new FlickWhere.Controller({
+                flickr_api : '2f028e7f7652ffa9fddce520536eec23',
+                static_url : '/app/static/'
+            });
+
+            (function (d) {
+                var js, id = 'livereload', ref = d.getElementsByTagName('script')[0];
+                if (d.getElementById(id)) {return;}
+                js = d.createElement('script'); js.id = id; js.async = true;
+                js.src = '//' + d.location.hostname + ':35729/livereload.js?snipver=1';
+                ref.parentNode.insertBefore(js, ref);
+            })(document);
+        </script>
+
+    </body>
+</html>

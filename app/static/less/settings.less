@@ -1,0 +1,75 @@
+// Project Variables
+// =================
+
+
+@results_width : 70%;
+
+
+// Colors
+
+@color_default : #3a1e0b;
+@color_default_hover : #3a1e0b;
+@color_default_em : #be7546;
+
+
+// Units
+
+#rem {
+    .font_size (@size: @font_size) {
+        font-size: 1rem * (@size / @font_size);
+    }
+
+    .line_height (@size: @font_size) {
+        line-height: 1rem * (@size / @font_size);
+    }
+}
+
+
+// Fonts
+
+@font_size: 13px;
+@font_path: "../../fonts/";
+
+#font_family_default {
+    .normal() {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .light() {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    .strong() {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+}
+
+#font_glyph {
+    .before(@character) {
+        &:before {
+            font-family: 'FontAwesome';
+            content: @character;
+            speak: none;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+    }
+
+    .default(@character) {
+        font-family: 'FontAwesome';
+        content: @character;
+        speak: none;
+        font-weight: normal;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+
+
+// Import project less
+
+@import "mixins.less";
+@import "symbols.less";

@@ -1,0 +1,28 @@
+@import "../settings.less";
+
+
+.map-frame,
+.map-google {
+    width: 100%;
+    height: 100%;
+}
+
+.map-frame {
+    position: fixed;
+    top: 0;
+    left: 0;
+    .boxShadow(5px 0 5px rgba(0, 0, 0, 0.3));
+
+    .transition(1s 500ms width ease);
+
+    &.has-results {
+        width: @results_width;
+    }
+}
+
+.map-logo {
+    z-index: 1000;
+    position: absolute;
+    top: 23px;
+    left: 90px;
+}

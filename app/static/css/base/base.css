@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 13px;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+body {
+  line-height: 1.6;
+  background: #f7f2e4;
+  color: #3a1e0b;
+  font-family: Helvetica, Arial, sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  position: relative;
+}
+p {
+  margin: 0 0 10px;
+}
+small {
+  font-size: 0.66666em;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: underline;
+}
+input[type=text],
+input[type=password],
+textarea,
+select {
+  background-color: #fff;
+  margin: 2px 0;
+}
+input,
+select {
+  cursor: pointer;
+}
+input[type='text'] {
+  cursor: text;
+  padding: 5px;
+}
+textarea {
+  padding: 5px;
+}

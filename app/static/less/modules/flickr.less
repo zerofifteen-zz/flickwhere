@@ -1,0 +1,33 @@
+@import "../settings.less";
+
+.flk-results {
+    float: right;
+    height: 100%;
+    width: 100% - @results_width;
+
+    &.is-loading {
+        background-image: url("../../images/icon-loading.gif");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+    }
+}
+
+.flk-photo {
+    @padding : 10px;
+
+    position: relative;
+    padding: 0 @padding @padding;
+
+    &:first-child {
+        padding-top: @padding;
+    }
+
+
+    img {
+        .boxSizing();
+        display: block;
+        width: 100%;
+        border: 6px solid white;
+        .boxShadow(0 5px 5px rgba(0, 0, 0, 0.3));
+    }
+}
