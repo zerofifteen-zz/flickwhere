@@ -23,7 +23,7 @@
         var options = {
             dataType: 'jsonp',
             data : {
-                api_key : FlickWhere.FLICKR_API_KEY,
+                api_key : this.options.flickr_api,
                 method : 'flickr.photos.search',
                 format: 'json',
                 jsoncallback  : 'parseFlickrResponse',
