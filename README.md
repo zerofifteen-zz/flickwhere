@@ -12,7 +12,7 @@ Location based Flickr search.
 
 3. Install project's node packages
 
-    npm install
+        npm install
 
 4. Run server
 
